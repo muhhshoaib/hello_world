@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'helloworld',
     'django_nose',
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (

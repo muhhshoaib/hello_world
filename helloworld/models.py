@@ -19,3 +19,10 @@ class UserInfo(models.Model):
             name=self.name,
             created_date=self.created.strftime('%l:%M%p %Z on %b %d, %Y')
         )
+
+    @classmethod
+    def get_all_users_info(cls):
+        """
+        returns all the users info objects
+        """
+        return cls.objects.all()

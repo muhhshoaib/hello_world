@@ -16,8 +16,14 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from helloworld import views
+from helloworld import api
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.home, name='home')
+    url(r'^$', views.home, name='home'),
+    url(
+        r'helloworld/v1/users_info$',
+        api.UserInfoApiView.as_view(),
+        name='helloworld.users_info'
+    ),
 ]
