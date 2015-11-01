@@ -1,4 +1,46 @@
-env
-*.DS_Store
-*.pyc
-__pycache__
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.eggs
+
+# Installation artifacts
+src
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+*.sqlite
+
+# Logs:
+*.log
+
+# Eclipse
+.project
+.pydevproject
+.settings
+
+# pycharm
+.idea/
+
+# Linux Editors
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+*.swp
+*.swo
+
+# Mac
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
