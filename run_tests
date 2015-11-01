@@ -1,0 +1,10 @@
+ECHO 'Beginning Test Run...'
+ECHO ''
+ECHO 'Removing *.pyc files'
+find . -name "*.pyc" -exec rm -rf {} \;
+
+ECHO 'Running test suite'
+coverage run manage.py test helloworld/tests --verbosity=3
+
+ECHO ''
+ECHO 'Testing Complete!'
