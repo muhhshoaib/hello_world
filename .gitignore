@@ -44,3 +44,10 @@ tramp
 # Windows
 Thumbs.db
 Desktop.ini
+
+# Test Artifacts
+.coverage
+nosetests.xml
+reports/
+coverage/
+htmlcov/

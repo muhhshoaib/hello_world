@@ -1,6 +1,6 @@
 ========================
 
-This is the development repository for the Hell World Kind of Django Application
+This is the development repository for the Hello World Kind of Django Application
 
 
 Standalone Testing
