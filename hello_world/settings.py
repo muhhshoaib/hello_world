@@ -25,6 +25,10 @@ SECRET_KEY = '3avnqvtda8@!c9-(^tx$0en6x$+ex%m(tz%(_38r&%7*tei=o^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+TEST_ROOT = "tests"
+
 ALLOWED_HOSTS = []
 
 
@@ -38,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'helloworld',
+    'django_nose',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,6 +73,10 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/',
+)
 
 WSGI_APPLICATION = 'hello_world.wsgi.application'
 
