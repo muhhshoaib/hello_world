@@ -6,7 +6,7 @@ from helloworld.models import UserInfo
 
 class UserInfoApiTests(LoggedInTestCase):
     """
-    Tests for the ProctoredExamView
+    Tests for the api.py file
     """
     def setUp(self):
         super(UserInfoApiTests, self).setUp()
