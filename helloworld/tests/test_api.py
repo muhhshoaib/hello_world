@@ -10,9 +10,6 @@ class UserInfoApiTests(LoggedInTestCase):
     """
     def setUp(self):
         super(UserInfoApiTests, self).setUp()
-        # self.user.is_staff = True
-        # self.user.save()
-        # self.client.login_user(self.user)
 
     def test_to_get_the_users_info_list(self):
         """
